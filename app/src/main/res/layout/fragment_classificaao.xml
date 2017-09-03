@@ -1,0 +1,273 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.andersonassis.vetriobranco.Fragments.ClassificaaoFragment"
+    android:id="@+id/swipeContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:background = "@drawable/gradient"
+        android:paddingTop = "1dp"
+        android:id = "@+id/scroll1"
+        android:fillViewport="false">
+
+
+        <TableLayout
+            android:id = "@+id/tlTable01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background = "@drawable/gradient"
+            android:paddingTop = "1dp"
+            android:shrinkColumns="*"
+            android:stretchColumns = "*">
+
+
+            <TextView
+                android:id="@+id/turno"
+                android:layout_marginLeft="1dp"
+                android:padding = "3dp"
+                android:text="Classificação Geral (Turno e Returno)"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background = "@drawable/gradient"
+                android:gravity="center"
+
+                />
+
+
+
+            <TableRow
+                android:background = "@drawable/gradient"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:paddingBottom = "1dp"
+                android:paddingRight = "1dp" >
+                <TextView
+                    android:id="@+id/equipe"
+                    android:layout_marginLeft="1dp"
+                    android:padding = "3dp"
+                    android:text="Equipe"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:background = "#FFF"
+
+                    />
+
+                <TextView
+                    android:id="@+id/pg1"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:text="PG"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/j1"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:text="J"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    android:textStyle="bold"
+                    />
+
+
+                <TextView
+                    android:id="@+id/v1"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:text="V"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/e1"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:text="E"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/d1"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:text="D"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/gp1"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:text="GP"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/gc1"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:text="GC"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    android:textStyle="bold"
+                    />
+
+
+                <TextView
+                    android:id="@+id/s1"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:text="S"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    android:textStyle="bold"
+                    />
+            </TableRow>
+
+
+
+
+            <!-- fim do cabeçalho -->
+            <TableRow
+                android:background = "@drawable/gradient"
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:paddingBottom = "1dp"
+                android:paddingRight = "1dp" >
+                <TextView
+                    android:id="@+id/classificacaoEquipe"
+                    android:layout_marginLeft="1dp"
+                    android:padding = "3dp"
+                    android:textColor="#000000"
+                    android:background = "#FFF"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/pg"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    />
+
+                <TextView
+                    android:id="@+id/j"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    />
+
+
+                <TextView
+                    android:id="@+id/v"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    />
+
+                <TextView
+                    android:id="@+id/e"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    />
+
+                <TextView
+                    android:id="@+id/d"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    />
+
+                <TextView
+                    android:id="@+id/gp"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    />
+
+                <TextView
+                    android:id="@+id/gc"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    />
+
+
+                <TextView
+                    android:id="@+id/s"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    />
+            </TableRow>
+
+
+
+            <TextView
+                android:id="@+id/rodape"
+                android:layout_marginLeft="1dp"
+                android:padding = "3dp"
+                android:text="@string/descricaoCampeonato"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background = "@drawable/gradient"
+                android:gravity="center"
+
+                />
+
+        </TableLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

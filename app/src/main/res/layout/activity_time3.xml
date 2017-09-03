@@ -1,0 +1,130 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeContainertime3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.andersonassis.vetriobranco.Time3">
+
+    <ScrollView
+
+
+        android:id="@+id/scrolltime3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        android:fillViewport="false"
+        android:paddingTop="1dp">
+
+
+        <TableLayout
+            android:id="@+id/tlTable01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient"
+            android:paddingTop="1dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+
+            <TextView
+                android:id="@+id/turno"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/Time3"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient"
+                android:paddingBottom="1dp"
+                android:paddingRight="1dp">
+
+                <TextView
+                    android:id="@+id/faixacabecalho"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:ems="1"
+                    android:padding="3dp"
+                    android:text="Faixa"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/nomejogadorcabecalho"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text="Jogador"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <!-- fim do cabeçalho -->
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient"
+                android:paddingBottom="1dp"
+                android:paddingRight="1dp">
+
+                <TextView
+                    android:id="@+id/faixaTime3"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:ems="1"
+                    android:padding="3dp"
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nomejogadorTime3"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:textSize="15dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+
+                    />
+            </TableRow>
+
+
+            <TextView
+                android:id="@+id/rodape"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/descricaoCampeonato"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+
+        </TableLayout>
+
+
+    </ScrollView>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>
+
+
+

@@ -1,0 +1,216 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipegoleiros"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.andersonassis.vetriobranco.Goleiros">
+
+
+    <ScrollView
+
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:background = "@drawable/gradient"
+        android:paddingTop = "1dp"
+        android:id = "@+id/scrollgoleiros"
+        android:fillViewport="false">
+
+
+        <TableLayout
+            android:id = "@+id/tlTable01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background = "@drawable/gradient"
+            android:paddingTop = "1dp"
+            android:shrinkColumns="*"
+            android:stretchColumns = "*">
+
+
+            <TextView
+                android:id="@+id/turno"
+                android:layout_marginLeft="1dp"
+                android:padding = "3dp"
+                android:text="Melhor Goleiro"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background = "@drawable/gradient"
+                android:gravity="center"
+
+                />
+
+
+
+            <TableRow
+                android:background = "@drawable/gradient"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:paddingBottom = "1dp"
+                android:paddingRight = "1dp" >
+                <TextView
+                    android:id="@+id/atleta1"
+                    android:layout_marginLeft="1dp"
+                    android:padding = "3dp"
+                    android:text="Atleta\n"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:background = "#FFF"
+
+                    />
+
+                <TextView
+                    android:id="@+id/equipe1"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:text="Equipe\n"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/JogosGol"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:text="Jogos\nGoleiro"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    android:textStyle="bold"
+                    />
+
+
+                <TextView
+                    android:id="@+id/jogosTi"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:text="Jogos\nTime"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/gol"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:text="Gols\n"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/Med"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:text="Media\n"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    android:textStyle="bold"
+                    />
+
+            </TableRow>
+
+
+
+
+            <!-- fim do cabeçalho -->
+            <TableRow
+                android:background = "@drawable/gradient"
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:paddingBottom = "1dp"
+                android:paddingRight = "1dp" >
+                <TextView
+                    android:id="@+id/atleta"
+                    android:layout_marginLeft="1dp"
+                    android:padding = "3dp"
+                    android:textColor="#000000"
+                    android:background = "#FFF"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/equipe"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    />
+
+                <TextView
+                    android:id="@+id/jogosgoleiro1"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    />
+
+
+                <TextView
+                    android:id="@+id/jogostime1"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    />
+
+                <TextView
+                    android:id="@+id/gols1"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    />
+
+                <TextView
+                    android:id="@+id/media"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:textColor="#000000"
+                    android:gravity = "right"
+                    />
+
+
+            </TableRow>
+
+
+
+            <TextView
+                android:id="@+id/rodape"
+                android:layout_marginLeft="1dp"
+                android:padding = "3dp"
+                android:text="@string/descricaoCampeonato"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background = "@drawable/gradient"
+                android:gravity="center"
+
+                />
+
+        </TableLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</android.support.v4.widget.SwipeRefreshLayout>
+
+
+

@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:padding="4dp"
+        app:titleMarginStart="25dp"/>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+
+        <TableLayout android:id="@+id/tableLayoutMessage"
+            android:shrinkColumns="*"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TableRow android:id="@+id/tableLayoutMessageUser"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView android:id="@+id/messageUser"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+
+                    android:text="@string/textoRegulamento" />
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>

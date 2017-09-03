@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/gradient"
+    tools:context="br.com.andersonassis.vetriobranco.conexao.VerificarConexao">
+
+    <Button
+        android:id="@+id/btn_tentar_novamente"
+        android:layout_width="375dp"
+        android:layout_height="46dp"
+        android:background="@color/colorAccent"
+        android:text="@string/tentar_novamente"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_marginTop="98dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/semconexao"
+        android:layout_width="366dp"
+        android:layout_height="46dp"
+        android:text="@string/sem_conexao"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteY="84dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_below="@+id/btn_tentar_novamente"
+        android:layout_alignRight="@+id/btn_tentar_novamente"
+        android:layout_alignEnd="@+id/btn_tentar_novamente"
+        android:layout_marginTop="66dp" />
+
+
+
+
+
+</RelativeLayout>

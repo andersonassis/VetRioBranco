@@ -1,0 +1,133 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.andersonassis.vetriobranco.Coringas"
+    android:id="@+id/swipeContainerCoringas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+
+
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:background = "@drawable/gradient"
+        android:paddingTop = "1dp"
+        android:id = "@+id/scrollCoringas"
+        android:fillViewport="false">
+
+
+        <TableLayout
+            android:id = "@+id/tlTable01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background = "@drawable/gradient"
+            android:paddingTop = "1dp"
+            android:shrinkColumns="*"
+            android:stretchColumns = "*">
+
+
+            <TextView
+                android:id="@+id/turno"
+                android:layout_marginLeft="1dp"
+                android:padding = "3dp"
+                android:text="@string/Time6"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background = "@drawable/gradient"
+                android:gravity="center"
+
+                />
+
+            <TableRow
+                android:background = "@drawable/gradient"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:paddingBottom = "1dp"
+                android:paddingRight = "1dp" >
+                <TextView
+                    android:id="@+id/faixacabecalho"
+                    android:layout_marginLeft="1dp"
+                    android:padding = "3dp"
+                    android:text="Faixa"
+                    android:ems="1"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:background = "#FFF"
+
+                    />
+
+                <TextView
+                    android:id="@+id/nomejogadorcabecalho"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:text="Jogador"
+                    android:ems="10"
+                    android:textColor="#000000"
+                    android:gravity = "left"
+                    android:textStyle="bold"
+                    />
+            </TableRow>
+
+            <!-- fim do cabeçalho -->
+
+
+            <TableRow
+                android:background = "@drawable/gradient"
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:paddingBottom = "1dp"
+                android:paddingRight = "1dp" >
+                <TextView
+                    android:id="@+id/faixa"
+                    android:layout_marginLeft="1dp"
+                    android:padding = "3dp"
+                    android:ems="1"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:background = "#FFF"
+                    />
+
+                <TextView
+                    android:id="@+id/nomejogador"
+                    android:layout_marginLeft = "1dp"
+                    android:padding = "3dp"
+                    android:background = "#FFF"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:gravity = "left"
+
+                    />
+            </TableRow>
+
+
+
+            <TextView
+                android:id="@+id/rodape"
+                android:layout_marginLeft="1dp"
+                android:padding = "3dp"
+                android:text="@string/descricaoCampeonato"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background = "@drawable/gradient"
+                android:gravity="center"
+
+                />
+
+        </TableLayout>
+
+
+
+    </ScrollView>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>
+
+
+

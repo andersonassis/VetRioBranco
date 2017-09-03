@@ -1,0 +1,184 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeCartoes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.andersonassis.vetriobranco.Fragments.Cartoes">
+
+
+
+    <ScrollView
+
+        android:id="@+id/scrollcartoes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        android:fillViewport="false"
+        android:paddingTop="1dp">
+
+
+
+
+        <TableLayout
+            android:id="@+id/tlTable01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient"
+            android:paddingTop="1dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+
+            <TextView
+                android:id="@+id/turno"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Cartões"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient"
+                android:paddingBottom="1dp"
+                android:paddingRight="1dp">
+
+                <TextView
+                    android:id="@+id/cartoescabecalho"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:padding="3dp"
+                    android:text="Equipe"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/cartoescabecalho1"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text="Atleta"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/amarelocabecalho"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFD700"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textColor="#FFD700"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/vermelhocabecalho"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FF4500"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textColor="#FF4500"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/suspensocabecalho"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text="Suspenso"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <!-- fim do cabeçalho -->
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient"
+                android:paddingBottom="1dp"
+                android:paddingRight="1dp">
+
+                <TextView
+                    android:id="@+id/equipeCartoes"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/atletacartoes"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/amarelocartoes"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:textColor="#FFD700"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/vermelhocartoes"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:textColor="#FF4500"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/suspenso"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </TableRow>
+
+            <TextView
+                android:id="@+id/rodape"
+                android:layout_marginLeft="1dp"
+                android:padding = "3dp"
+                android:text="Legendas: \nC=cumpriu \nS=Suspenso \nJulg = Julgamento"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:background = "@drawable/gradient"
+                android:gravity="left"
+
+                />
+
+        </TableLayout>
+
+    </ScrollView>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>
+
+
+
