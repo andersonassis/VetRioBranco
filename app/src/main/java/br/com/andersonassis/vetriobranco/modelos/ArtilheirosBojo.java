@@ -1,14 +1,14 @@
-package br.com.andersonassis.vetriobranco.cardview;
+package br.com.andersonassis.vetriobranco.modelos;
 
 /**
  * Created by AndersonLuis on 04/03/2018.
  */
 
 public class ArtilheirosBojo {
-    public String nomeJogador;
-    public String equipe;
-    public String golsMarcados;
-    public String imagem;
+    private String nomeJogador;
+    private String equipe;
+    private String golsMarcados;
+    private String imagem;
 
     public ArtilheirosBojo(String nomeJogador, String equipe, String golsMarcados, String imagem) {
         this.nomeJogador = nomeJogador;

@@ -9,32 +9,26 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
-
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import br.com.andersonassis.vetriobranco.R;
-import br.com.andersonassis.vetriobranco.adapter.ArtilheirosAdapter;
-import br.com.andersonassis.vetriobranco.modelos.ArtilheirosBojo;
+import br.com.andersonassis.vetriobranco.adapter.CartoesAdapter;
+import br.com.andersonassis.vetriobranco.modelos.CartoesModel;
 
-
-public class ArtilheirosNovo extends Fragment {
+public class CartoesNovo extends Fragment {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
-    private List<ArtilheirosBojo> listItem;
-    //String url = "http://www.vetriobranco.qlix.com.br/artilheiros.php";
-    String url = "http://www.riobrancoamparo.com.br/veteranos/app/artilheiros.php";
+    private List<CartoesModel> listItem;
+    private  String url = "http://www.riobrancoamparo.com.br/veteranos/app/cartoes.php";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -55,7 +49,6 @@ public class ArtilheirosNovo extends Fragment {
 
     private void loadDados() {
         final ProgressDialog progress = new ProgressDialog(getActivity());
-
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
@@ -63,21 +56,22 @@ public class ArtilheirosNovo extends Fragment {
                         progress.dismiss();
                         try {
                             JSONObject jsonObject = new JSONObject(s);
-                            JSONArray array  = jsonObject.getJSONArray("artilheiros");
+                            JSONArray array  = jsonObject.getJSONArray("cartoes");
 
                             for (int i = 0; i<array.length(); i++){
                                 JSONObject o = array.getJSONObject(i);
-                                ArtilheirosBojo item = new ArtilheirosBojo(
-                                        o.getString("nomeJogador") ,
-                                        o.getString("equipe") ,
-                                        o.getString("golsMarcados") ,
-                                        o.getString("simbolo")
+                                CartoesModel item = new CartoesModel(
+                                        o.getString("Equipe") ,
+                                        o.getString("Atleta") ,
+                                        o.getString("Amarelo") ,
+                                        o.getString("Vermelho"),
+                                        o.getString("Suspenso")
                                 );
                                 listItem.add(item);
 
                             }//fim do for
 
-                            adapter = new ArtilheirosAdapter(listItem,getActivity());
+                            adapter = new CartoesAdapter(listItem,getActivity());
                             recyclerView.setAdapter(adapter);
 
                         } catch (JSONException e) {
@@ -99,4 +93,8 @@ public class ArtilheirosNovo extends Fragment {
 
 
 
-}
+
+
+
+
+}//fim da classe

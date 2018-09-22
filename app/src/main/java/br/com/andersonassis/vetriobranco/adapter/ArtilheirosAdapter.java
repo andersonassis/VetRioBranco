@@ -13,9 +13,7 @@ import com.bumptech.glide.Glide;
 import java.util.List;
 
 import br.com.andersonassis.vetriobranco.R;
-import br.com.andersonassis.vetriobranco.cardview.ArtilheirosBojo;
-import br.com.andersonassis.vetriobranco.cardview.ListItemCardviewPr;
-import br.com.andersonassis.vetriobranco.cardview.MyAdapter;
+import br.com.andersonassis.vetriobranco.modelos.ArtilheirosBojo;
 
 /**
  * Created by AndersonLuis on 04/03/2018.

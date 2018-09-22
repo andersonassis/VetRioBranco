@@ -40,80 +40,81 @@
                 />
 
 
-
             <TableRow
-                android:background = "@drawable/gradient"
-                android:layout_width = "wrap_content"
-                android:layout_height = "wrap_content"
-                android:paddingBottom = "1dp"
-                android:paddingRight = "1dp" >
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient"
+                android:paddingBottom="1dp"
+                android:paddingRight="1dp">
+
                 <TextView
                     android:id="@+id/atleta1"
                     android:layout_marginLeft="1dp"
-                    android:padding = "3dp"
+                    android:background="#FFF"
+                    android:padding="3dp"
                     android:text="Atleta\n"
                     android:textColor="#000000"
                     android:textStyle="bold"
-                    android:background = "#FFF"
+
 
                     />
 
                 <TextView
                     android:id="@+id/equipe1"
-                    android:layout_marginLeft = "1dp"
-                    android:padding = "3dp"
-                    android:background = "#FFF"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="right"
+                    android:padding="3dp"
                     android:text="Equipe\n"
                     android:textColor="#000000"
-                    android:gravity = "right"
                     android:textStyle="bold"
+
 
                     />
 
                 <TextView
                     android:id="@+id/JogosGol"
-                    android:layout_marginLeft = "1dp"
-                    android:padding = "3dp"
-                    android:background = "#FFF"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="right"
+                    android:padding="3dp"
                     android:text="Jogos\nGoleiro"
                     android:textColor="#000000"
-                    android:gravity = "right"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
 
                 <TextView
                     android:id="@+id/jogosTi"
-                    android:layout_marginLeft = "1dp"
-                    android:padding = "3dp"
-                    android:background = "#FFF"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="right"
+                    android:padding="3dp"
                     android:text="Jogos\nTime"
                     android:textColor="#000000"
-                    android:gravity = "right"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/gol"
-                    android:layout_marginLeft = "1dp"
-                    android:padding = "3dp"
-                    android:background = "#FFF"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="right"
+                    android:padding="3dp"
                     android:text="Gols\n"
                     android:textColor="#000000"
-                    android:gravity = "right"
                     android:textStyle="bold"
                     />
 
                 <TextView
                     android:id="@+id/Med"
-                    android:layout_marginLeft = "1dp"
-                    android:padding = "3dp"
-                    android:background = "#FFF"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="right"
+                    android:padding="3dp"
                     android:text="Media\n"
                     android:textColor="#000000"
-                    android:gravity = "right"
                     android:textStyle="bold"
                     />
+
 
             </TableRow>
 
@@ -144,6 +145,7 @@
                     android:background = "#FFF"
                     android:textColor="#000000"
                     android:gravity = "right"
+
                     />
 
                 <TextView
@@ -153,6 +155,7 @@
                     android:background = "#FFF"
                     android:textColor="#000000"
                     android:gravity = "right"
+
                     />
 
 
@@ -163,6 +166,7 @@
                     android:background = "#FFF"
                     android:textColor="#000000"
                     android:gravity = "right"
+
                     />
 
                 <TextView
@@ -172,6 +176,7 @@
                     android:background = "#FFF"
                     android:textColor="#000000"
                     android:gravity = "right"
+
                     />
 
                 <TextView
@@ -181,6 +186,7 @@
                     android:background = "#FFF"
                     android:textColor="#000000"
                     android:gravity = "right"
+
                     />
 
 
